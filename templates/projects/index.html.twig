@@ -1,0 +1,9 @@
+{% extends "base.html.twig" %}
+{%  block body %}
+    {{ q["bts"] | raw }}
+    <div id="response" class="ui segment"></div>
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    {{ script_foot | raw }}
+{% endblock %}
