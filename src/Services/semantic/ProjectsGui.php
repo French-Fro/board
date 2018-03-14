@@ -16,9 +16,9 @@ class ProjectsGui extends JquerySemantic{
         return $bt;
     }
     public function buttons(){
-        $bts=$this->_semantic->htmlButtonGroups("bts",["Projects","Tags"]);
-        $bts->addIcons(["folder","tags"]);
-        $bts->setPropertyValues("data-url", ["projects","tags"]);
+        $bts=$this->_semantic->htmlButtonGroups("bts",["Projects","Tags","Developers"]);
+        $bts->addIcons(["folder","tags","user secret"]);
+        $bts->setPropertyValues("data-url", ["projects","tags","developers"]);
         $bts->getOnClick("","#response",["attr"=>"data-url"]);
     }
 }

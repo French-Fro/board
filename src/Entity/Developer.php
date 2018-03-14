@@ -28,5 +28,38 @@ class Developer
      */
     private $identity;
 
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return string
+     */
+    public function getIdentity()
+    {
+        return $this->identity;
+    }
+
+    /**
+     * @param string $identity
+     */
+    public function setIdentity($identity)
+    {
+        $this->identity = $identity;
+    }
+
+
 
 }
